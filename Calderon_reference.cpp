@@ -15,7 +15,8 @@ void swap(int& A, int& B);
 int main()
 {
 //***********************Function 1*****************************************************
-//Precondition:If value is not within range. Asserts fail and program exits.
+//Summary: Arranges numbers in ascending order
+//Precondition:If value is not within range,0-100. Asserts fail and program exits.
     int numA = 0, numB = 8, numC = 2;
     sort(numA,numB,numC);
     assert(numA == 0);
@@ -28,7 +29,8 @@ int main()
     assert(numC1 == 8);
 //Postcondition:After using the sort funtion the values are arranged in ascending order.
 //************************Function 2******************************************************
-//Precondition: If values are not within range asserts fail and program exits.
+//Summary:Gives the number of digits in a number.
+//Precondition: If values are not within range,-1000 to 1000 asserts fail and program exits.
     int n;
     numDigits(34, n);
     assert(n == 2);
@@ -37,6 +39,7 @@ int main()
     assert(n1 == 4);
 // Postcondition: After inputing the desired number, the function returns the number of digits
 //************************Function 3*******************************************************
+//Summary: Computes the area and volume of a sphere
 //Precondition: If the value is not within the range 0 ,10000,  the assert will fail ending the program
     double a, v, E;
     E = .0001;
@@ -49,7 +52,8 @@ int main()
     assert(( v1 - 0) < E);
 //Postcondition: Aster running the program the appropriate values for area and volume are given out.
 //****************************Function 4*************************************************************
-//Precondition:The program runs if the preconditions are met beforehand.If not it exits the program
+//Summary: Swaps the A B int values around.
+//Precondition:The program runs if the preconditions are met beforehand, a positive value.If not it exits the program
     int A=1 ,B=2;
     swap(A, B);
     assert( A == 2);
